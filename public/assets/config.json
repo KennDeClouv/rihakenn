@@ -1,0 +1,90 @@
+{
+  "pap": [
+    {
+      "type": 1,
+      "title": "Papp buatt kamuu",
+      "name": "kenn",
+      "image": "assets/img/pap/kenn01.jpg"
+    },
+    {
+      "type": 2,
+      "title": "Pap buat suamii",
+      "name": "rihaa",
+      "image": "assets/img/pap/riha02.jpg"
+    },
+    {
+      "type": 3,
+      "title": "Kamuu sukaa? ><",
+      "name": "rihaa",
+      "image": "assets/img/pap/riha01.jpg"
+    },
+    {
+      "type": 1,
+      "title": "for my love",
+      "name": "kenn",
+      "image": "assets/img/pap/kenn03.jpg"
+    },
+    {
+      "type": 2,
+      "title": "am i cute? ><",
+      "name": "rihaa",
+      "image": "assets/img/pap/riha03.jpg"
+    }
+  ],
+
+
+
+  "bareng": [
+    {
+      "image": "assets/img/20241228_100603.jpg",
+      "title": "Third meet",
+      "content": "Every moment spent with you is like a beautiful dream come true. I cherish our time together and look forward to creating more unforgettable memories with you."
+    },
+    {
+      "image": "assets/img/20241228_100601.jpg",
+      "title": "Second meet",
+      "content": "Our second meeting was like a beautiful melody, where every note resonated with joy and laughter. I treasure the moments we shared and eagerly anticipate the symphony of memories we will create together."
+    }
+  ],
+
+
+  "gallery": [
+    {
+
+      "image": "assets/img/pap/01.jpg"
+    },
+    {
+      "image": "assets/img/pap/02.jpg"
+    },
+    {
+      "image": "assets/img/pap/03.jpg"
+    },
+    {
+      "image": "assets/img/pap/01.jpg"
+    },
+    {
+      "image": "assets/img/pap/02.jpg"
+    },
+    {
+      "image": "assets/img/pap/03.jpg"
+    },
+    {
+      "image": "assets/img/pap/01.jpg"
+    },
+    {
+      "image": "assets/img/pap/02.jpg"
+    },
+    {
+      "image": "assets/img/pap/03.jpg"
+    },
+    {
+      "image": "assets/img/pap/01.jpg"
+    },
+    {
+      "image": "assets/img/pap/02.jpg"
+    },
+    {
+      "image": "assets/img/pap/03.jpg"
+    }
+  ]
+}
