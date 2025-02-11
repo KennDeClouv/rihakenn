@@ -221,7 +221,7 @@
                                         <div class="btn-item">
                                             <div class="btn-item_back"></div>
                                             <div class="btn-item_front">
-                                                <div>maak een gratis account aan</div>
+                                                <div>upload fotoo</div>
                                             </div>
                                         </div>
                                     </div>

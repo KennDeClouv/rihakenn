@@ -1,0 +1,26 @@
+name: Auto Deploy 🚀
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code 📤
+        uses: actions/checkout@v3
+
+      - name: Setup SSH Key 🔑
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key.pem
+          chmod 600 ~/.ssh/deploy_key.pem
+          ssh-keyscan -H ssh.us.stackcp.com > ~/.ssh/known_hosts
+
+      - name: Deploy files via SCP 📡
+        run: |
+          scp -i ~/.ssh/deploy_key.pem -r * kenndeclouv.my.id@ssh.us.stackcp.com:workspace/php_projects/rihakenn.my.id/
+
+      - name: ✅ Deployment Success
+        run: echo "Deployment completed successfully!"

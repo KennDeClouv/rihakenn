@@ -16,7 +16,7 @@ class PinAuthMiddleware
     public function handle(Request $request, Closure $next)
     {
         if (!session()->has('logged_in')) {
-            return redirect()->route('login.index')->with('error', 'Silakan login dulu.');
+            return redirect()->route('login.index');
         }
 
         return $next($request);
