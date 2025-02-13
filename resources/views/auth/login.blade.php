@@ -43,6 +43,12 @@
             background-color: #ccc;
         }
 
+        .card-pin {
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+        }
+
         @media (max-width: 768px) {
             .card-pin {
                 flex-direction: column; /* Stack elements vertically on mobile */
@@ -50,9 +56,10 @@
             }
 
             .card-pin img {
-                order: -1; /* Move image to the top */
-                max-width: 80%; /* Responsive image size */
-                margin-bottom: 1rem; /* Space below the image */
+                display: none;
+                /* order: -1;
+                max-width: 80%;
+                margin-bottom: 1rem; */
             }
         }
     </style>
