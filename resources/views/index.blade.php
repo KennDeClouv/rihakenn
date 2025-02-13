@@ -258,11 +258,12 @@
                                     </div>
                                     <div data-w-id="30ae2fdf-dd44-2983-cc7a-a81b01f375bb" class="usp_card is-4">
                                         <div class="max-width-720">
-                                            <div class="heading-style-80px">kitaa harus jadii<br></div>
+                                            <div class="heading-style-80px">happy harii<br></div>
                                             <div class="card-span_wrapper">
-                                                <div class="heading-style-80px relative-1">suami istrii</div>
+                                                <div class="heading-style-80px relative-1">valentine</div>
                                                 <img src="assets/img/64ae58384cfe3129b62f55ac_shape-03.svg" loading="lazy"
-                                                    alt="shape" class="span-element is-4">
+                                                alt="shape" class="span-element is-4">
+                                                <div class="heading-style-80px relative-1">my princess</div>
                                             </div>
                                         </div>
                                         <!-- <div class="char-illustration is-char-cloud">

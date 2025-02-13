@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\FileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChallengeController;
 
 Route::get('/', function () {
     return view('index');
@@ -23,3 +24,7 @@ Route::group(['prefix' => 'gallery', 'as' => 'gallery.', 'middleware' => 'pin.au
     Route::get('/file/{id}', [FileController::class, 'getFile'])->name('file');
     Route::get('/get-files', [FileController::class, 'getFiles'])->name('get-files');
 });
+
+Route::get('/challenge', [ChallengeController::class, 'index'])->name('challenge.index');
+Route::get('/challenge/generate', [ChallengeController::class, 'generate'])->name('challenge.generate');
+Route::get('/challenge/get-challenges', [ChallengeController::class, 'getChallenges'])->name('challenge.get-challenges');

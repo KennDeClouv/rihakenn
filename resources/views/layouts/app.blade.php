@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="{{ asset('assets/img/64ae9ef32581060221e80c19_favicon.svg') }}" rel="shortcut icon" type="image/x-icon">
-    <link href="{{ asset('assets/img/64ae9ef6f8cbcbba6b4a06f8_webicon.svg') }}" rel="apple-touch-icon">
+    <link href="{{ asset('assets/img/favicon.png') }}" rel="shortcut icon" type="image/x-icon">
+    <link href="{{ asset('assets/img/favicon.png') }}" rel="apple-touch-icon">
 
     <script defer="" src="{{ asset('assets/vendors/attributes/selectcustom.js') }}"></script>
     <script defer="" src="{{ asset('assets/vendors/attributes/scrolldisable.js') }}"></script>
@@ -88,41 +88,8 @@
     <script src="{{ asset('assets/vendors/lenis/lenis.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/split-type/split-type.min.js') }}"></script>
     <script src="{{ asset('assets/js/mhw.js') }}" type="text/javascript"></script>
-    {{-- <script type="text/javascript" src="https://player.vimeo.com/api/player.js"></script> --}}
     <!-- APP JS -->
     <script src="{{ asset('assets/js/app.js') }}"></script>
     @yield('script')
 </body>
 </html>
-
-<!-- <div class="card-button is-primary">
-<div class="card-button_spacing">
-  <div custom-cursor-trigger="pointer" class="button is-v2">
-    <div class="btn_content">
-      <div class="btn-content_wrap">
-        <div class="btn-content_spacing">
-          <div class="btn-item">
-            <div class="btn-item_back is-icon"></div>
-            <div class="btn-item_front is-icon is-sand">
-              <div class="btn-item_track">
-                <div class="btn_item_track-item is-01"><img loading="lazy"
-                    src="64a6bba2e0302dee48f779ae/64b65380b595f06019fdd473_icon-arrow.svg"
-                    alt="" class="icon-16"></div>
-                <div class="btn_item_track-item is-02"><img loading="lazy"
-                    src="64a6bba2e0302dee48f779ae/64b65380b595f06019fdd473_icon-arrow.svg"
-                    alt="" class="icon-16"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btn-item">
-        <div class="btn-item_back"></div>
-        <div class="btn-item_front is-sand">
-          <div>lees meer</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div> -->

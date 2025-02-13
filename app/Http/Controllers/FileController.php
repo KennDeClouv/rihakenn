@@ -19,7 +19,7 @@ class FileController extends Controller
     public function upload(Request $request)
     {
         $request->validate([
-            'file' => 'required|file',
+            'file' => 'required|file|image|mimes:jpeg,png,jpg,gif,svg,mp4,webm',
         ]);
 
         $file = $request->file('file');

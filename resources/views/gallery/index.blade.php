@@ -1,6 +1,6 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'Kenn & Rihaa')
+@section('title', 'Kenn & Rihaa | Gallery')
 
 @section('script')
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -43,25 +43,30 @@
                         addImageClickEvent(); // Pastikan event click tetap aktif
                     })
                     .catch(error => {
-                        console.error("Error fetching files:", error);
-                        uploadedFilesDiv.innerHTML = "<p>Error loading files.</p>";
+                        console.error("gagal load gambar:", error);
+                        uploadedFilesDiv.innerHTML = "<p>gagal load gambar.</p>";
                     });
             }
 
             function openUploadModal() {
                 Swal.fire({
-                    title: "Select image",
+                    title: "pilih gambarrmuu",
                     input: "file",
                     inputAttributes: {
                         accept: "image/*",
-                        "aria-label": "Upload your profile picture"
+                        "aria-label": "pilih gambar dulu"
                     },
                     showCloseButton: true,
                     showCancelButton: true,
+                    closeButtonColor: "#000",
+                    confirmButtonColor: "var(--green)",
+                    confirmButtonText: "upload gambar!",
+                    cancelButtonText: "batal :(",
                     focusConfirm: false,
+                    background: "var(--sand)",
                     preConfirm: (file) => {
                         if (!file) {
-                            Swal.showValidationMessage('Please select a file');
+                            Swal.showValidationMessage('pilih gambar dulu');
                             return false;
                         }
 
@@ -74,6 +79,7 @@
                             html: '<div class="swal-progress"><div class="swal-progress-bar"></div></div>',
                             allowOutsideClick: false,
                             showConfirmButton: false,
+                            background: "var(--sand)",
                             didOpen: () => {
                                 Swal.showLoading();
                             }
@@ -87,18 +93,21 @@
                             .then(data => {
                                 if (data.success) {
                                     Swal.fire({
-                                        title: "Success!",
-                                        text: "Image uploaded successfully.",
+                                        title: "YEYY!😋",
+                                        text: "upload berhasilll!",
                                         icon: "success",
                                         timer: 1500,
+                                        background: "var(--sand)",
                                         showConfirmButton: false
                                     });
                                     refreshFileList(); // Update list setelah upload berhasil
                                 } else {
                                     Swal.fire({
-                                        title: "Error",
-                                        text: "Upload failed!",
-                                        icon: "error"
+                                        title: "YAHH😭",
+                                        text: "yahh upload gagall!",
+                                        icon: "error",
+                                        background: "var(--sand)",
+
                                     });
                                 }
                             })
@@ -106,7 +115,9 @@
                                 Swal.fire({
                                     title: "Error",
                                     text: "Error uploading file.",
-                                    icon: "error"
+                                    icon: "error",
+                                    background: "var(--sand)",
+                                    confirmButtonColor: "var(--red)",
                                 });
                             });
                     }
@@ -153,7 +164,7 @@
         }
 
         .swal2-container {
-            background: #fffffff9 !important;
+            background: #ffffffb8 !important;
             /* gelapin bg belakang */
         }
     </style>
@@ -195,7 +206,7 @@
                             <div class="verder-lezen_wrapper">
                                 <div class="hide-this">
                                     <div class="span-heading_intro">
-                                        <div class="heading-style-128px">gratis</div>
+                                        <div class="heading-style-128px"></div>
                                     </div><img src="{{ asset('assets/img/64affd6ce95f31b1c3920822_shape_08.svg') }}"
                                         loading="lazy" alt="shape" class="span-element is-7">
                                 </div>

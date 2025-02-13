@@ -22,21 +22,23 @@
                     </div>
                     <div data-w-id="9c946e22-085f-d6c4-9e96-499f4a8fc3b1" class="footer-bottom">
                         <div class="footer-botton_content">
-                            <div class="social-media_wrapper"><a custom-cursor-trigger="pointer"
-                                    href="https://www.facebook.com/makehrwork" target="_blank"
-                                    class="social-media_link w-inline-block"><img
-                                        src="{{ asset('assets/img/64ae977e246de91e7d6a47c9_facebook.svg') }}" loading="lazy"
-                                        alt="" class="social-icon is-01"></a><a custom-cursor-trigger="pointer"
-                                    href="https://instagram.com/rikenndeclouv" target="_blank"
-
-                                    class="social-media_link w-inline-block"><img
-                                        src="{{ asset('assets/img/64ae97c344e435d97ed67e30_instagram.svg') }}" loading="lazy"
-                                        alt="" class="social-icon is-02"></a><a custom-cursor-trigger="pointer"
-
-                                    href="https://www.linkedin.com/in/rikenndeclouv" target="_blank"
-                                    class="social-media_link w-inline-block"><img
-                                        src="{{ asset('assets/img/64ae97c2f0f265b487faed43_linkedin.svg') }}" loading="lazy"
-                                        alt="" class="social-icon is-03"></a></div>
+                            <div class="social-media_wrapper">
+                                {{-- <a custom-cursor-trigger="pointer" href="https://www.facebook.com/makehrwork"
+                                    target="_blank" class="social-media_link w-inline-block">
+                                    <img src="{{ asset('assets/img/64ae977e246de91e7d6a47c9_facebook.svg') }}"
+                                        loading="lazy" alt="" class="social-icon is-01">
+                                </a> --}}
+                                <a custom-cursor-trigger="pointer" href="https://instagram.com/rikenndeclouv"
+                                    target="_blank" class="social-media_link w-inline-block">
+                                    <img src="{{ asset('assets/img/64ae97c344e435d97ed67e30_instagram.svg') }}"
+                                        loading="lazy" alt="" class="social-icon is-02">
+                                </a>
+                                {{-- <a custom-cursor-trigger="pointer" href="https://www.linkedin.com/in/rikenndeclouv"
+                                    target="_blank" class="social-media_link w-inline-block">
+                                    <img src="{{ asset('assets/img/64ae97c2f0f265b487faed43_linkedin.svg') }}"
+                                        loading="lazy" alt="" class="social-icon is-03">
+                                </a> --}}
+                            </div>
                             <div class="footer_gelderland-wrapper">
                                 <div>made with 💖 by</div><a custom-cursor-trigger="pointer"
                                     href="https://kenndeclouv.my.id" target="_blank" class="footer-link">kenndeclouv</a>

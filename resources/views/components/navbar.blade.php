@@ -26,8 +26,8 @@
                         </div>
                         <div class="nav-menu_content-list">
                             <div custom-cursor-trigger="pointer" class="nav-menu_content-spacing"></div>
-                            <a custom-cursor-trigger="pointer" href="{{ route('gallery.index') }}" class="nav-link w-inline-block"
-                                style="margin-right: auto;">
+                            <a custom-cursor-trigger="pointer" href="{{ route('gallery.index') }}"
+                                class="nav-link w-inline-block" style="margin-right: auto;">
                                 <div class="nav-link_underline-current"></div>
                                 <div class="nav-link_content">
                                     <div>Gallery</div>
@@ -37,13 +37,28 @@
                                 </div>
                             </a>
                         </div>
+                        {{-- <div class="nav-menu_content-list">
+                            <div custom-cursor-trigger="pointer" class="nav-menu_content-spacing"></div>
+                            <a custom-cursor-trigger="pointer" href="{{ route('challenge.index') }}"
+                                class="nav-link w-inline-block" style="margin-right: auto;">
+                                <div class="nav-link_underline-current"></div>
+                                <div class="nav-link_content">
+                                    <div>Challenge</div>
+                                    <div class="nav-link_underline">
+                                        <div class="nav-link_underline-fill"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> --}}
                         <div class="nav-menu_content-list">
                             <div custom-cursor-trigger="pointer" class="nav-menu_content-spacing"></div>
-                            <form action="{{ route('logout') }}" method="POST" class="nav-link w-inline-block" style="margin-right: auto;">
+                            <form action="{{ route('logout') }}" method="POST" class="nav-link w-inline-block"
+                                style="margin-right: auto;">
                                 @csrf
                                 <div class="nav-link_underline-current"></div>
                                 <div class="nav-link_content">
-                                    <button type="submit" style="background: none; border: none; color: inherit; cursor: pointer; padding: 0;">
+                                    <button type="submit"
+                                        style="background: none; border: none; color: inherit; cursor: pointer; padding: 0;">
                                         <div>LOGOUT</div>
                                         <div class="nav-link_underline">
                                             <div class="nav-link_underline-fill"></div>
